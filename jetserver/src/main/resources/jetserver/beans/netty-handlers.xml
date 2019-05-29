@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<import resource="service-beans.xml"></import>
+	
+	<!-- Netty and decoders encoders and handlers -->
+	<bean id="stringDecoder" class="org.jboss.netty.handler.codec.string.StringDecoder"></bean>
+	<bean id="stringEncoder" class="org.jboss.netty.handler.codec.string.StringEncoder"></bean>
+	<bean id="base64Decoder" class="org.jboss.netty.handler.codec.base64.Base64Decoder"></bean>
+	<bean id="base64Encoder" class="org.jboss.netty.handler.codec.base64.Base64Encoder"></bean>
+	<bean id="nulEncoder" class="org.menacheri.jetserver.handlers.netty.NulEncoder"></bean>
+	<bean id="byteArrayToChannelBufferEncoder"
+		class="org.menacheri.jetserver.handlers.netty.ByteArrayToChannelBufferEncoder"></bean>
+	<bean id="lengthFieldPrepender"
+		class="org.jboss.netty.handler.codec.frame.LengthFieldPrepender">
+		<constructor-arg type="int" index="0" value="2"></constructor-arg>
+		<constructor-arg type="boolean" index="1" value="false"></constructor-arg>
+	</bean>
+	<bean id="lengthFieldBasedFrameDecoder"
+		class="org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder"
+		scope="prototype">
+		<constructor-arg type="int" index="0" value="4096"></constructor-arg>
+		<constructor-arg type="int" index="1" value="0"></constructor-arg>
+		<constructor-arg type="int" index="2" value="2"></constructor-arg>
+		<constructor-arg type="int" index="3" value="0"></constructor-arg>
+		<constructor-arg type="int" index="4" value="2"></constructor-arg>
+	</bean>
+	<bean id="idleCheckHandler" class="org.menacheri.jetserver.handlers.netty.IdleStateCheckHandler"></bean>
+	<bean id="byteArrayStreamDecoder" class="org.menacheri.jetserver.handlers.netty.ByteArrayStreamDecoder"></bean>
+	<bean id="byteArrayDecoder" class="org.menacheri.jetserver.handlers.netty.ByteArrayDecoder"></bean>
+	<bean id="flashPolicyServerDecoder" class="org.menacheri.jetserver.handlers.netty.FlashPolicyServerDecoder"></bean>
+	<bean id="flashPolicyServerHandler" class="org.menacheri.jetserver.handlers.netty.FlashPolicyServerHandler" scope="prototype">
+		<constructor-arg value="${tcp.port}"></constructor-arg>
+	</bean>
+	<bean id="AMF3ToJavaObjectDecoder" class="org.menacheri.jetserver.handlers.netty.AMF3ToJavaObjectDecoder"></bean>
+	<bean id="AMF3ToEventSourceDecoder" class="org.menacheri.jetserver.handlers.netty.AMF3ToEventSourceDecoder"></bean>
+	<bean id="javaToAMF3Encoder" class="org.menacheri.jetserver.handlers.netty.JavaObjectToAMF3Encoder"></bean>
+	<bean id="eventSourceToAMF3Encoder" class="org.menacheri.jetserver.handlers.netty.EventSourceToAMF3Encoder"></bean>
+	<bean id="eventDecoder" class="org.menacheri.jetserver.handlers.netty.EventDecoder"></bean>
+	<bean id="eventEncoder" class="org.menacheri.jetserver.handlers.netty.EventEncoder"></bean>
+	<bean id="messageBufferEventDecoder" class="org.menacheri.jetserver.handlers.netty.MessageBufferEventDecoder"></bean>
+	<bean id="messageBufferEventEncoder" class="org.menacheri.jetserver.handlers.netty.MessageBufferEventEncoder"></bean>
+	<bean id="udpUpstreamHandler" class="org.menacheri.jetserver.handlers.netty.UDPUpstreamHandler">
+		<property name="udpSessionRegistry" ref="udpSessionRegistry"></property>
+	</bean>
+	
+	<bean id="loginHandler" class="org.menacheri.jetserver.handlers.netty.LoginHandler">
+		<property name="lookupService" ref="lookupService"></property>
+		<property name="udpSessionRegistry" ref="udpSessionRegistry"></property>
+		<property name="idGeneratorService" ref="simpleUniqueIdGenerator"></property>
+		<property name="reconnectRegistry" ref="reconnectSessionRegistry"></property>
+	</bean>
+	
+	<bean id="webSocketLoginHandler" class="org.menacheri.jetserver.handlers.netty.WebSocketLoginHandler">
+		<property name="lookupService" ref="lookupService"></property>
+		<property name="idGeneratorService" ref="simpleUniqueIdGenerator"></property>
+		<property name="reconnectRegistry" ref="reconnectSessionRegistry"></property>
+		<property name="gson" ref="gson"></property>
+	</bean>
+	<bean id="textWebsocketEncoder" class="org.menacheri.jetserver.handlers.netty.TextWebsocketEncoder">
+		<property name="gson" ref="gson"></property>
+	</bean>
+	<bean id="textWebsocketDecoder" class="org.menacheri.jetserver.handlers.netty.TextWebsocketDecoder">
+		<property name="gson" ref="gson"></property>
+	</bean>
+</beans>
+# Change 3 on 2019-05-29
