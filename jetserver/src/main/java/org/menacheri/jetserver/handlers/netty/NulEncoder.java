@@ -30,3 +30,4 @@ public class NulEncoder extends OneToOneEncoder {
 }
 # Change 0 on 2019-03-05
 # Change 2 on 2019-03-06
+# Change 3 on 2019-05-30
