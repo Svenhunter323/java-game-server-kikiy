@@ -99,3 +99,4 @@ public interface Player
 # Change 1 on 2019-02-02
 # Change 0 on 2019-03-06
 # Change 0 on 2019-06-21
+# Change 1 on 2019-07-19
