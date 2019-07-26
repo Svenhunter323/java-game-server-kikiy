@@ -467,3 +467,4 @@ public class SimpleSgsProtocolConstants{
     public static final byte CHANNEL_MESSAGE = 0x52;
 }
 # Change 0 on 2019-05-30
+# Change 0 on 2019-07-26
