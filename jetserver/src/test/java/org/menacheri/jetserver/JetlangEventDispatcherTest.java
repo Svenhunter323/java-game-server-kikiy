@@ -242,3 +242,4 @@ public class JetlangEventDispatcherTest {
 # Change 0 on 2019-08-06
 # Change 1 on 2019-08-28
 # Change 0 on 2019-10-08
+# Change 1 on 2019-12-17
