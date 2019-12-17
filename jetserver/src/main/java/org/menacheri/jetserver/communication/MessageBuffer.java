@@ -318,3 +318,4 @@ public interface MessageBuffer<T> {
 	void clear();
 }
 # Change 2 on 2019-08-01
+# Change 2 on 2019-12-17
