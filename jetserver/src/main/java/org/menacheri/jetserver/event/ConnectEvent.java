@@ -26,3 +26,4 @@ public interface ConnectEvent extends Event
 # Change 0 on 2021-11-05
 # Change 1 on 2019-09-25
 # Change 0 on 2019-09-28
+# Change 2 on 2019-12-20
