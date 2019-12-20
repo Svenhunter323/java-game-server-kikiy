@@ -18,3 +18,4 @@ public interface JetlangDisposable
 	public void setDisposable(Disposable disposable);
 }
 # Change 0 on 2019-11-22
+# Change 1 on 2019-12-20
