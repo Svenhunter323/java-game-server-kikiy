@@ -109,3 +109,4 @@ public class SimpleGameAdminService implements GameAdminService
 # Change 0 on 2021-09-29
 # Change 1 on 2019-06-21
 # Change 0 on 2019-10-02
+# Change 0 on 2020-01-07
