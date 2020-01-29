@@ -45,3 +45,4 @@ public class BinaryUtils
 # Change 1 on 2019-10-17
 # Change 1 on 2019-11-21
 # Change 0 on 2020-01-09
+# Change 3 on 2020-01-29
