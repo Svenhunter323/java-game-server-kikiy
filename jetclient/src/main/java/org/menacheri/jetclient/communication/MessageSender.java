@@ -42,3 +42,4 @@ public interface MessageSender
 	public interface Fast extends MessageSender{}
 }
 # Change 1 on 2019-11-23
+# Change 2 on 2020-04-03
