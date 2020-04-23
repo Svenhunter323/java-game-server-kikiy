@@ -220,3 +220,4 @@ public abstract class AbstractSessionEventHandler implements
 }
 # Change 0 on 2019-07-19
 # Change 0 on 2020-01-04
+# Change 1 on 2020-04-23
