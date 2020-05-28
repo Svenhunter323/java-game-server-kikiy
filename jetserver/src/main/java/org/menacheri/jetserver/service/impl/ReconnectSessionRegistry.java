@@ -97,3 +97,4 @@ public class ReconnectSessionRegistry extends SessionRegistry<String>
 # Change 0 on 2020-01-28
 # Change 2 on 2020-02-01
 # Change 0 on 2020-03-18
+# Change 1 on 2020-05-28
