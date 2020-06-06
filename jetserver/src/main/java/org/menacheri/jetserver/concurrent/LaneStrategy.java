@@ -143,3 +143,4 @@ public interface LaneStrategy<LANE_ID_TYPE, UNDERLYING_LANE, GROUP>
 # Change 1 on 2020-02-01
 # Change 3 on 2020-02-14
 # Change 3 on 2020-05-26
+# Change 2 on 2020-06-06
