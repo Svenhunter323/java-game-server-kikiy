@@ -33,3 +33,4 @@ public class NulEncoder extends OneToOneEncoder {
 # Change 3 on 2019-05-30
 # Change 0 on 2019-08-08
 # Change 1 on 2020-02-05
+# Change 2 on 2020-06-27
