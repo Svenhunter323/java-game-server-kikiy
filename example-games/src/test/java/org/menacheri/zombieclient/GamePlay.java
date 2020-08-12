@@ -55,3 +55,4 @@ public class GamePlay implements Runnable
 # Change 2 on 2020-01-14
 # Change 2 on 2020-02-14
 # Change 0 on 2020-06-06
+# Change 3 on 2020-08-12
