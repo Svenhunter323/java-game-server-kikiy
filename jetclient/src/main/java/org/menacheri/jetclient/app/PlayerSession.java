@@ -23,3 +23,4 @@ public interface PlayerSession extends Session
 # Change 2 on 2020-06-12
 # Change 0 on 2020-06-27
 # Change 2 on 2020-07-10
+# Change 2 on 2020-08-19
