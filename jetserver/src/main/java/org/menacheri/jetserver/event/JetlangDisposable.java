@@ -21,3 +21,4 @@ public interface JetlangDisposable
 # Change 1 on 2019-12-20
 # Change 2 on 2020-07-18
 # Change 0 on 2020-09-04
+# Change 0 on 2020-10-14
