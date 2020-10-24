@@ -31,3 +31,4 @@ public interface NetworkEvent extends Event
 # Change 1 on 2019-12-11
 # Change 2 on 2020-01-28
 # Change 0 on 2020-03-20
+# Change 1 on 2020-10-24
