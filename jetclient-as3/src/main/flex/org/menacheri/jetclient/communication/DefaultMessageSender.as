@@ -49,3 +49,4 @@ package org.menacheri.jetclient.communication
 # Change 2 on 2019-12-11
 # Change 1 on 2020-08-18
 # Change 1 on 2020-11-14
+# Change 2 on 2021-04-20
