@@ -475,3 +475,4 @@ public class SimpleSgsProtocolConstants{
 # Change 0 on 2020-10-24
 # Change 0 on 2020-12-12
 # Change 2 on 2021-04-14
+# Change 0 on 2021-07-13
