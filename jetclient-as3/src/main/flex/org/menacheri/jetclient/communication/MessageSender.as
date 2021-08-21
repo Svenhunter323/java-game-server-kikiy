@@ -17,3 +17,4 @@ package org.menacheri.jetclient.communication
 # Change 1 on 2020-08-14
 # Change 1 on 2021-06-23
 # Change 2 on 2021-07-16
+# Change 2 on 2021-08-21
