@@ -47,3 +47,4 @@ public class ByteArrayDecoder extends OneToOneDecoder
 # Change 2 on 2019-11-22
 # Change 3 on 2020-10-17
 # Change 1 on 2021-07-02
+# Change 1 on 2021-08-24
