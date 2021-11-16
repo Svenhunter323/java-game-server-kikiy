@@ -223,3 +223,4 @@ public abstract class AbstractSessionEventHandler implements
 # Change 1 on 2020-04-23
 # Change 1 on 2020-08-12
 # Change 0 on 2020-08-18
+# Change 2 on 2021-11-16
