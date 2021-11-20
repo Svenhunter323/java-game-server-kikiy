@@ -46,3 +46,4 @@ public interface MessageSender
 # Change 0 on 2020-04-30
 # Change 1 on 2021-10-23
 # Change 0 on 2021-11-11
+# Change 0 on 2021-11-20
