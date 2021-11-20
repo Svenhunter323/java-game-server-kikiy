@@ -49,3 +49,4 @@ public class ByteArrayDecoder extends OneToOneDecoder
 # Change 1 on 2021-07-02
 # Change 1 on 2021-08-24
 # Change 2 on 2021-10-23
+# Change 1 on 2021-11-20
